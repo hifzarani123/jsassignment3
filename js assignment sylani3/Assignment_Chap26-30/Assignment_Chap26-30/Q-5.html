@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var coin = (Math.random() * 2) + 1;
+        coin = Math.floor(coin);
+        if (coin === 1) {
+            var toss = "Tail";
+        }
+        else {
+            toss = "Head";
+        }
+        document.write(coin + "<br/>random coin value: " + toss);
+    </script>
+</body>
+
+</html>

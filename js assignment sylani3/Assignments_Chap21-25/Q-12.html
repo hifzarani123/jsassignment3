@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+        var order = prompt("Welcome to ABC Bakery. What do you want to order sir/ ma'am?");
+        var available = false;
+        for (var i = 0; i < A.length; i++) {
+            if (order.toLowerCase() === A[i]) {
+                available = true;
+                document.write(order + " is <b>available</b> at index " + i + " in our bakery");
+                break
+            }
+        }
+        if (available === false) {
+            document.write("We are sorry, " + order + " is <b>not available</b> in our bakery");
+        }
+    </script>
+</body>
+
+</html>
